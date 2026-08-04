@@ -1,23 +1,964 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
+
+
+    <!-- JSON-LD 구조화 데이터 - AI 검색엔진 및 검색 봇 최적화 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://yourdomain.com/bmw-6-series-price"
+      },
+      "headline": "2026년형 BMW 6시리즈 가격 및 할인 혜택 총정리 | 중고차 시세와 실구매가 분석",
+      "image": "https://via.placeholder.com/1200x630/1e293b/fff?text=BMW+6+Series+Price+Guide",
+      "datePublished": "2026-05-18T09:00:00+09:00",
+      "dateModified": "2026-08-05T10:00:00+09:00",
+      "author": {
+        "@type": "Organization",
+        "name": "수입차 시장 연구 분석 센터"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "수입차 시장 연구 분석 센터",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://via.placeholder.com/600x60/1e293b/fff?text=BMW+Price+Logo"
+        }
+      },
+      "description": "2026년 기준 BMW 6시리즈 GT 모델별 신차 및 중고차 가격, 프로모션 할인, 유지비 및 보험료 정보와 일시불, 리스, 장기렌트 견적 비교 분석 결과를 제공합니다.",
+      "articleBody": "BMW 6시리즈 그란투리스모 모델은 수입 대형 패밀리카 시장에서 압도적인 공간 활용성과 편안한 승차감으로 오랫동안 사랑받아 온 차량입니다. 본 가이드에서는 2026년 현재 기준으로 BMW 6시리즈 GT 신차 및 중고차 시장의 가격 형성대, 프로모션 할인 동향, 모델별 유지비와 자동차보험료 절약 전략까지 상세히 분석하여 합리적인 구매 가이드를 제시합니다."
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "BMW 6시리즈 GT 단종 이후 2026년 현재 신차 구매가 가능한가요?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "BMW 6시리즈 그란투리스모는 공식적으로 단종 수순을 밟았으나, 2026년 현재 일부 공식 딜러사의 잔여 재고(스톡) 차량이 프로모션 할인이 적용되어 판매되고 있습니다. 재고가 소진된 이후에는 주행거리가 짧은 인증 중고차나 일반 중고차 매물을 통해 구매하는 것이 주된 방법입니다."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "BMW 620d GT와 630i GT 모델의 가격 및 유지비 차이는 얼마나 되나요?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "신차 출고가 기준으로는 630i GT가 약 300만원에서 500만원가량 높게 책정되어 있습니다. 연간 유지비 측면에서는 620d GT가 뛰어난 디젤 연비(리터당 약 13km대) 덕분에 연료비가 크게 절감되지만, 6기통 가솔린 엔진의 부드러운 승차감과 정숙성을 선호하는 운전자라면 630i GT가 장기적으로 높은 만족도를 줍니다."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "BMW 6시리즈 중고차 구매 시 취등록세와 세금은 어떻게 계산되나요?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "일반 승용차와 동일하게 실제 중고차 거래 금액(또는 과세표준액 중 높은 금액)의 7%가 취등록세로 부과됩니다. 자동차세의 경우 620d는 2.0L 기준으로 연간 약 52만원, 630i 및 640i는 3.0L 기준으로 연간 약 78만원이 부과되며, 연식에 따라 일정 비율 감면 혜택이 적용됩니다."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --primary-color: #1e293b;
+            --secondary-color: #3b82f6;
+            --accent-color: #f97316;
+            --text-color: #334155;
+            --bg-light: #f8fafc;
+            --card-bg: #ffffff;
+            --border-color: #e2e8f0;
+            --table-header-bg: #f1f5f9;
+            --teal-color: #0d9488;
+        }
+        
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+        
+        body { 
+            font-family: 'Noto Sans KR', sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-color: var(--bg-light); 
+            color: var(--text-color); 
+            line-height: 1.8; 
+            font-size: 16px; 
+        }
+        .container { 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            padding: 0 20px; 
+        }
+        
+        /* 헤더 */
+        header { 
+            background-color: var(--primary-color); 
+            padding: 20px 0; 
+            text-align: center; 
+            border-bottom: 4px solid var(--secondary-color); 
+        }
+        header h1 { 
+            margin: 0; 
+            font-size: 1.8em; 
+            color: #ffffff; 
+            font-weight: 700; 
+        }
+        header h1 a { 
+            text-decoration: none; 
+            color: inherit; 
+        }
+
+        /* 히어로 섹션 */
+        .hero { 
+            background-color: var(--primary-color); 
+            color: #ffffff; 
+            text-align: center; 
+            padding: 60px 20px; 
+            border-bottom: 1px solid var(--border-color);
+        }
+        .hero h2 { 
+            font-size: 2.5em; 
+            margin-bottom: 15px; 
+            font-weight: 700; 
+            line-height: 1.3; 
+        }
+        .hero p { 
+            font-size: 1.2em; 
+            margin-bottom: 30px; 
+            font-weight: 300; 
+            color: #cbd5e1;
+        }
+
+        /* 메인 레이아웃 구도 */
+        .main-layout {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+            margin-top: 40px;
+        }
+        
+        @media (min-width: 992px) {
+            .main-layout {
+                grid-template-columns: 2fr 1fr;
+            }
+        }
+
+        /* 카드 공통 스타일 */
+        .card {
+            background-color: var(--card-bg);
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            margin-bottom: 30px;
+            border: 1px solid var(--border-color);
+        }
+        
+        /* 인터랙티브 실구매가 계산기 */
+        .calculator-card {
+            border-top: 6px solid var(--secondary-color);
+        }
+        .calculator-card h3 {
+            color: var(--primary-color);
+            font-size: 1.6em;
+            margin-top: 0;
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 10px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+        .form-group select, .form-group input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            box-sizing: border-box;
+            font-size: 1em;
+            background-color: var(--bg-light);
+            color: var(--text-color);
+        }
+        .form-group select:focus, .form-group input:focus {
+            outline: none;
+            border-color: var(--secondary-color);
+            background-color: #ffffff;
+        }
+        .calc-btn {
+            background-color: var(--secondary-color);
+            color: #ffffff;
+            padding: 15px;
+            font-size: 1.1em;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.2s;
+        }
+        .calc-btn:hover {
+            background-color: #2563eb;
+        }
+        
+        /* 계산 결과 출력창 */
+        .result-box {
+            background-color: var(--bg-light);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 25px;
+            border-left: 5px solid var(--teal-color);
+            display: none;
+        }
+        .result-box h4 {
+            margin-top: 0;
+            color: var(--teal-color);
+            font-size: 1.2em;
+        }
+        .result-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            font-size: 0.95em;
+            border-bottom: 1px dashed var(--border-color);
+            padding-bottom: 5px;
+        }
+        .result-total {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 700;
+            font-size: 1.2em;
+            color: var(--accent-color);
+            margin-top: 15px;
+            padding-top: 10px;
+            border-top: 2px solid var(--border-color);
+        }
+
+        /* 본문 콘텐츠 섹션 */
+        .content-body h2 {
+            font-size: 1.8em;
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        .content-body h3 {
+            font-size: 1.4em;
+            color: var(--teal-color);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        .content-body h4 {
+            font-size: 1.1em;
+            color: var(--primary-color);
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-weight: 600;
+            border-left: 4px solid var(--accent-color);
+            padding-left: 8px;
+        }
+        .content-body p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+        
+        /* 테이블 스타일링 */
+        .table-responsive {
+            overflow-x: auto;
+            margin: 25px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.95em;
+            min-width: 600px;
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: center;
+            border: 1px solid var(--border-color);
+        }
+        th {
+            background-color: var(--table-header-bg);
+            color: var(--primary-color);
+            font-weight: 700;
+        }
+        tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+        .highlight {
+            font-weight: 700;
+            color: var(--accent-color);
+        }
+
+        /* 탭 가이드 구조 */
+        .tabs {
+            display: flex;
+            border-bottom: 2px solid var(--border-color);
+            margin-bottom: 20px;
+        }
+        .tab-button {
+            padding: 12px 20px;
+            cursor: pointer;
+            border: none;
+            background: none;
+            font-size: 1em;
+            font-weight: 500;
+            color: var(--text-color);
+            border-bottom: 3px solid transparent;
+            transition: all 0.2s;
+        }
+        .tab-button.active {
+            color: var(--secondary-color);
+            border-bottom-color: var(--secondary-color);
+            font-weight: 700;
+        }
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.3s ease;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* 키워드 태그 리스트 */
+        .keyword-box {
+            background-color: #f1f5f9;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+        }
+        .keyword-title {
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            font-size: 1em;
+        }
+        .keyword-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .keyword-list li {
+            background-color: #ffffff;
+            color: #475569;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            border: 1px solid var(--border-color);
+        }
+
+        /* FAQ 스타일링 */
+        .faq-section {
+            margin-top: 40px;
+        }
+        .faq-item {
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            margin-bottom: 12px;
+            background-color: #ffffff;
+            overflow: hidden;
+        }
+        .faq-header {
+            padding: 18px 20px;
+            background-color: #ffffff;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 700;
+            color: var(--primary-color);
+            user-select: none;
+        }
+        .faq-header:hover {
+            background-color: var(--table-header-bg);
+        }
+        .faq-icon {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-right: 2px solid var(--secondary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            transform: rotate(45deg);
+            transition: transform 0.3s;
+        }
+        .faq-item.active .faq-icon {
+            transform: rotate(-135deg);
+        }
+        .faq-body {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+            background-color: var(--bg-light);
+            border-top: 0 solid var(--border-color);
+            font-size: 0.95em;
+            color: #475569;
+        }
+        .faq-item.active .faq-body {
+            padding: 18px 20px;
+            max-height: 500px;
+            border-top-width: 1px;
+        }
+
+        /* 외부 참고 사이트 링크 카드 */
+        .external-links {
+            background-color: #f0fdf4;
+            border: 1px solid #bbf7d0;
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 40px;
+        }
+        .external-links h4 {
+            margin-top: 0;
+            color: #166534;
+            font-size: 1.1em;
+            margin-bottom: 12px;
+        }
+        .external-links ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .external-links li {
+            margin-bottom: 8px;
+        }
+        .external-links a {
+            color: #15803d;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .external-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* 푸터 */
+        footer {
+            background-color: var(--primary-color);
+            color: #94a3b8;
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 0.85em;
+            margin-top: 60px;
+            border-top: 4px solid var(--secondary-color);
+        }
+        footer a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1><a href="/">BMW 6시리즈 가격표 및 구매 완벽 분석센터</a></h1>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero" style="border-radius: 0 0 16px 16px;">
+            <h2>BMW 6시리즈 그란투리스모 가격 및 할인 프로모션 정보</h2>
+            <p>2026년 기준 실시간 중고차 시세와 잔여 스톡 물량의 혜택 및 운용 유지비를 투명하게 산출해 드립니다.</p>
+        </section>
+
+        <div class="main-layout">
+            <!-- 왼쪽: 메인 상세 정보 콘텐츠 영역 -->
+            <article class="content-body">
+                
+                <section class="keyword-box">
+                    <div class="keyword-title">함께 많이 검색하는 실시간 연관 키워드</div>
+                    <ul class="keyword-list">
+                        <li>BMW 6시리즈 가격</li>
+                        <li>6GT 중고차 시세</li>
+                        <li>630i xDrive M Sport</li>
+                        <li>620d GT 럭셔리</li>
+                        <li>BMW 6시리즈 단종</li>
+                        <li>수입 대형 세단 비교</li>
+                        <li>에어 서스펜션 유지비</li>
+                        <li>패밀리카 추천 순위</li>
+                    </ul>
+                </section>
+
+                <h2 id="section1">2026년형 BMW 6시리즈 그란투리스모(GT)의 독보적 위상</h2>
+                <p>
+                    BMW 6시리즈 그란투리스모(GT) 모델은 프리미엄 수입차 시장에서 매우 독특하면서도 실용적인 위치를 차지하는 차량입니다. 7시리즈의 숏바디 플랫폼을 공유하여 설계된 덕분에 동급 세단이나 SUV 대비 압도적으로 넓은 레그룸과 거주성을 지녔습니다. 2열 등받이 각도 조절 기능과 후륜 에어 서스펜션 탑재는 장거리 주행 시 탑승객에게 마치 퍼스트 클래스에 탑승한 듯한 안락함을 선사합니다.
+                </p>
+                <p>
+                    2024년 말 생산이 중단되며 공식 단종 수순을 밟았으나, 2026년 현재까지도 보배드림, 디시인사이드, 펨코, 에펨코리아 등 국내 주요 자동차 커뮤니티에서 대형 패밀리카를 찾는 오너들의 0순위 추천 차량으로 끊임없이 언급됩니다. 넓은 트렁크 개방 공간은 골프백 여러 개나 대형 유모차를 싣기에 무리가 없고, 폴딩 시 차박과 캠핑 활동까지 지원하여 패밀리 세단과 SUV의 장점을 모두 결합했다는 찬사를 받고 있습니다.
+                </p>
+
+                <h2 id="section2">BMW 6시리즈 신차 가격표 및 2026년 실시간 중고 시세표</h2>
+                <p>
+                    BMW 6시리즈의 실제 구매 비용은 남아있는 신차 잔여 스톡의 할인 조건 혹은 연식과 주행거리에 따른 중고차 시세에 의해 결정됩니다. 아래의 표는 단종 이전의 공식 출고가와 2026년 현재 거래되고 있는 실시간 중고 시장의 시세 범위를 요약한 자료입니다.
+                </p>
+
+                <div class="table-responsive">
+                    <table>
+                        <caption>표 1. BMW 6시리즈 그란투리스모 주요 트림별 공식 신차 가격 및 2026년 평균 중고 거래 시세</caption>
+                        <thead>
+                            <tr>
+                                <th>세부 모델명</th>
+                                <th>엔진 종류</th>
+                                <th>공식 신차가격 (원)</th>
+                                <th>2026년 평균 중고시세 (원)</th>
+                                <th>예상 프로모션 할인 (원)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>620d GT Luxury</td>
+                                <td>4기통 디젤</td>
+                                <td>86,700,000</td>
+                                <td class="highlight">35,000,000 - 48,000,000</td>
+                                <td>11,000,000 - 13,000,000</td>
+                            </tr>
+                            <tr>
+                                <td>620d GT M Sport</td>
+                                <td>4기통 디젤</td>
+                                <td>89,800,000</td>
+                                <td class="highlight">38,000,000 - 52,000,000</td>
+                                <td>11,500,000 - 13,500,000</td>
+                            </tr>
+                            <tr>
+                                <td>630i xDrive Luxury</td>
+                                <td>6기통 가솔린</td>
+                                <td>89,500,000</td>
+                                <td class="highlight">44,000,000 - 62,000,000</td>
+                                <td>10,000,000 - 12,000,000</td>
+                            </tr>
+                            <tr>
+                                <td>630i xDrive M Sport</td>
+                                <td>6기통 가솔린</td>
+                                <td>93,500,000</td>
+                                <td class="highlight">48,000,000 - 68,000,000</td>
+                                <td>10,500,000 - 12,500,000</td>
+                            </tr>
+                            <tr>
+                                <td>640i xDrive M Sport</td>
+                                <td>6기통 가솔린</td>
+                                <td>109,500,000</td>
+                                <td class="highlight">55,000,000 - 78,000,000</td>
+                                <td>13,000,000 - 15,000,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p style="font-size: 0.85em; color: #64748b; margin-top: -10px;">
+                    위 시세표는 연식(2020년형~2024년형) 및 차량 상태, 무사고 여부에 따라 다소 편차가 존재할 수 있습니다. 수입차 특성상 딜러사의 파이낸셜 이용 여부, 신규 가입 조건 등에 따라 프로모션 금액은 달라지므로 오프라인 대리점이나 전문 컨설팅 업체를 통한 추가 비교가 필요합니다.
+                </p>
+
+                <h2 id="section3">BMW 6시리즈 그란투리스모 트림별 장단점 및 상세 분석</h2>
+                <p>
+                    구매자의 라이프스타일과 주행 환경에 맞춰 최적의 파워트레인을 선택해야 장기 보유 시 후회가 없습니다. 620d 디젤 모델과 630i, 640i 가솔린 엔진의 구체적인 특성을 탭 메뉴를 통해 직접 비교해 보십시오.
+                </p>
+
+                <!-- 인터랙티브 모델 탭 시스템 -->
+                <div class="tabs">
+                    <button class="tab-button active" onclick="openTab(event, 'tab-620d')">620d 디젤</button>
+                    <button class="tab-button" onclick="openTab(event, 'tab-630i')">630i 가솔린</button>
+                    <button class="tab-button" onclick="openTab(event, 'tab-640i')">640i 고성능</button>
+                </div>
+
+                <div id="tab-620d" class="tab-content active">
+                    <h4>620d GT (2.0 디젤 싱글터보)</h4>
+                    <p>
+                        <strong>장점:</strong> 장거리 주행 빈도가 높은 분들에게 최고의 선택지입니다. 고속도로 정속 주행 시 리터당 16km를 상회하는 뛰어난 연료 효율성을 보여주며, 연간 주행거리가 2만km를 넘는 경우 경제적 비용 부담이 매우 낮아집니다.
+                    </p>
+                    <p>
+                        <strong>단점:</strong> 4기통 디젤 특유의 잔진동과 소음(NVH)이 정차 시 실내로 유입될 수 있습니다. 6기통 모델 대비 초반 가속감이나 고속 영역에서의 펀치력은 다소 부족하게 느껴질 수 있습니다.
+                    </p>
+                    <p>
+                        <strong>추천 대상:</strong> 뛰어난 공간성을 활용하면서도 패밀리카의 연간 유지 주행 비용을 최소화하고 싶은 실속파 운전자에게 적합합니다.
+                    </p>
+                </div>
+
+                <div id="tab-630i" class="tab-content">
+                    <h4>630i xDrive GT (3.0 가솔린 실키식스)</h4>
+                    <p>
+                        <strong>장점:</strong> BMW가 자랑하는 6기통 직렬 가솔린 엔진이 탑재되어 극상의 정숙성과 부드러운 가속 질감을 보여줍니다. 사륜구동(xDrive)이 기본 적용되어 눈길이나 빗길에서도 매우 안정적인 거동을 자랑합니다.
+                    </p>
+                    <p>
+                        <strong>단점:</strong> 도심 위주의 주행 시 리터당 7~8km 안팎의 연비를 보여 연료비 지출이 620d 대비 증가합니다. 3.0L 배기량으로 인해 연간 자동차세 역시 높게 부과됩니다.
+                    </p>
+                    <p>
+                        <strong>추천 대상:</strong> 편안하고 품격 있는 승차감과 정숙성을 가장 우선시하며, 정체 구간 및 주말 가족 여행을 동시에 편안히 즐기고자 하는 분들에게 가장 높은 선호도를 보입니다.
+                    </p>
+                </div>
+
+                <div id="tab-640i" class="tab-content">
+                    <h4>640i xDrive GT (3.0 고성능 가솔린)</h4>
+                    <p>
+                        <strong>장점:</strong> 최고출력 340마력의 풍부한 힘을 바탕으로 거대한 차체를 가볍고 신속하게 밀어붙입니다. 풍부한 옵션 사양과 고급 내장재가 고루 적용되어 있어 만족감이 높습니다.
+                    </p>
+                    <p>
+                        <strong>단점:</strong> 중고 매물 수 자체가 적어 양질의 무사고 차량을 구하기가 상대적으로 어렵고, 감가상각 방어선이 높은 편이라 초기 예산 책정 시 부담이 클 수 있습니다.
+                    </p>
+                    <p>
+                        <strong>추천 대상:</strong> 고성능 주행 질감과 고급스러운 사양을 모두 양보할 수 없는 플래그십 그랜드 투어러의 정수를 원하는 마니아층에 어울립니다.
+                    </p>
+                </div>
+
+                <h2 id="section4">BMW 6시리즈 유지비 계산기 및 절약 전략</h2>
+                <p>
+                    수입차는 신차 가격만큼이나 보험료, 소모품 교환 비용, 유류비 등의 고정 유지비 설계가 필수적입니다. 특히 6시리즈 GT는 차체가 크고 에어 서스펜션과 고가의 부품들이 다수 포함되어 있어 사고 시 수리비용 부담이 상당하므로 신중한 다이렉트 자동차보험 선택이 수십만 원의 고정비를 절약하는 열쇠가 됩니다.
+                </p>
+                <p>
+                    보험료 절감을 위해서는 먼저 주행거리가 짧을 때 환급받는 마일리지 특약, 차량에 기본 탑재된 첨단 안전장치(ADAS) 할인, 모바일 내비게이션 연동 UBI 안전운전 점수 혜택 등을 꼼꼼하게 등록해야 합니다. 또한, 중고차로 구매할 때는 기존 운전 경력이 있다면 가족 경력 인정을 신청하여 요율 승계를 받는 등 다양한 방법을 강구하는 것이 유리합니다.
+                </p>
+
+                <h2 id="section5">구매 방식별 비교: 일시불 vs 리스 vs 장기렌트</h2>
+                <p>
+                    BMW 6시리즈 가격 부담을 낮추기 위해 소비자들은 상황에 맞는 최적의 구매 루트를 선택하고 있습니다. 각 방식별 장단점과 권장하는 유형은 다음과 같습니다.
+                </p>
+                <div class="table-responsive">
+                    <table>
+                        <caption>표 2. 일시불, 운용 리스, 장기렌트 구매 옵션의 핵심 차이점 비교</caption>
+                        <thead>
+                            <tr>
+                                <th>비교 항목</th>
+                                <th>일시불 / 현금 구매</th>
+                                <th>운용 리스</th>
+                                <th>장기렌트</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>명의 설정</td>
+                                <td>개인 소유 명의</td>
+                                <td>금융사/리스사 명의</td>
+                                <td>렌트사 명의 (하, 허, 호 번호판)</td>
+                            </tr>
+                            <tr>
+                                <td>비용 처리</td>
+                                <td>개인 자산 편입 (감가)</td>
+                                <td>연간 최대 1,500만원 손비처리</td>
+                                <td>대여료 전액 세무 비용 처리 가능</td>
+                            </tr>
+                            <tr>
+                                <td>보험 요율</td>
+                                <td>개인 경력 유지 및 누적</td>
+                                <td>개인 경력 유지 및 누적</td>
+                                <td>렌트사 단체보험 요율 적용</td>
+                            </tr>
+                            <tr>
+                                <td>부채 인식</td>
+                                <td>부채로 잡히지 않음</td>
+                                <td>금융 리스의 경우 신용대출 한도 영향</td>
+                                <td>임대차 계약으로 신용도 무관</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p>
+                    개인 사업자나 법인 오너의 경우 종합소득세 감면이나 세무 처리 목적상 운용 리스나 장기렌트를 선호하는 경향이 뚜렷합니다. 반면, 개인 경력이 좋아 사고 이력이 없고 최저가 보험료 혜택을 온전히 누릴 수 있다면 일시불 혹은 부분 할부를 통해 차량을 내 것으로 만드는 것이 가장 요금제 금리 손실을 줄이는 경제적인 방법입니다.
+                </p>
+
+                <h2 id="section6">인터넷 커뮤니티 실제 오너들의 내돈내산 평가 및 주의사항</h2>
+                <p>
+                    보배드림과 디시 등 동호회 네트워크의 실제 소유주들의 생생한 리뷰를 취합해 보면, 가장 큰 장점으로 광활한 패밀리카 공간과 고속 도로 주행 시의 묵직한 안정감을 꼽습니다. 7시리즈 바디의 중후함 덕에 장시간 운전을 해도 피로감이 확연히 덜하다는 주장이 대부분입니다.
+                </p>
+                <p>
+                    다만 단점으로 지적되는 사항은 보증 만료 이후 발생할 수 있는 에어 서스펜션 노후화 고장 비용과 큰 차체로 인한 좁은 골목길 및 타이트한 주차장에서의 주행 난이도입니다. 중고 매물을 알아볼 때는 성능점검기록부를 꼼꼼하게 검토하고, 하부 누유나 서스펜션 주저앉음 현상이 없는지 면밀히 체크해야 함을 조언하고 있습니다. 최근에는 네이버 밴드나 동호회 카페를 통해 정비 성지 좌표를 공유받아 사설 정비 업체를 효율적으로 활용하는 오너들이 많습니다.
+                </p>
+
+                <!-- 신뢰성 확보를 위한 외부 자료 출처 -->
+                <section class="external-links">
+                    <h4>공인된 신뢰성 있는 정보 및 공식 출처 리스트</h4>
+                    <ul>
+                        <li>
+                            <a href="https://directlcheckg.koreahankang.com" target="_blank" rel="noopener">
+                                ReliableDone 수입차 감가상각 및 가격 표준 분석 보고서
+                            </a> - 차종별 잔존 가치 및 장기 유지 비용 전문 지표 제공
+                        </li>
+                        <li>
+                            <a href="https://namu.wiki/w/BMW%206%EC%8B%9C%EB%A6%AC%EC%A6%88%20GT" target="_blank" rel="noopener">
+                                나무위키: BMW 6시리즈 그란투리스모
+                            </a> - 세대별 역사, 사양 정보 및 단종 히스토리 상세 수록
+                        </li>
+                        <li>
+                            <a href="https://www.bmw.co.kr" target="_blank" rel="noopener">
+                                BMW 코리아 공식 웹사이트
+                            </a> - 공식 순정 부품 가격 조회 및 전국 서비스센터 운영 안내
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- FAQ 아코디언 섹션 -->
+                <section class="faq-section">
+                    <h2>자주 접수되는 대표 질문 (FAQ)</h2>
+                    
+                    <div class="faq-item">
+                        <div class="faq-header" onclick="toggleFaq(this)">
+                            BMW 6시리즈의 실제 연간 자동차세는 대략 얼마인가요?
+                            <span class="faq-icon"></span>
+                        </div>
+                        <div class="faq-body">
+                            배기량을 기준으로 세금이 매겨집니다. 620d 모델의 경우 1,995cc로 연간 약 52만원 선이며, 630i와 640i 모델은 2,998cc로 연간 약 78만원 선입니다. 최초 등록일로부터 차령이 3년이 지난 시점부터는 매년 5%씩 최대 50%까지 세금 감면 혜택이 주어지므로 중고차일수록 자동차세 부담은 점차 줄어들게 됩니다.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-header" onclick="toggleFaq(this)">
+                            수입 차량인데 보험 가입 시 가장 저렴하게 하는 요령은 무엇인가요?
+                            <span class="faq-icon"></span>
+                        </div>
+                        <div class="faq-body">
+                            오프라인 설계사 채널을 통하지 않고 다이렉트 온라인 인터넷 웹사이트나 전용 스마트폰 앱 어플을 이용해 다이렉트로 설계 시 평균 15% 이상 기본 절약이 가능합니다. 여기에 티맵 안전운전 특약, 1만km 미만 주행 마일리지 특약, 부부 혹은 1인 한정 운전자 범위를 최소화하는 것이 가장 핵심적인 방법입니다.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-header" onclick="toggleFaq(this)">
+                            패밀리카로서 BMW X5와 비교했을 때 6GT의 강점은 무엇인가요?
+                            <span class="faq-icon"></span>
+                        </div>
+                        <div class="faq-body">
+                            X5와 같은 SUV 모델들은 차고가 높아 타고 내릴 때 어린 자녀나 노약자분들이 다소 불편해할 수 있으며 고속 주행 시 롤링 현상이 생길 수 있습니다. 반면 6시리즈 GT는 낮은 지상고를 지녀 승하차가 매우 용이하고 세단 고유의 흔들림 없는 승차감을 갖추고 있으면서도, 해치백 스타일의 광활한 트렁크 개방으로 유모차, 웨건 등을 유연하게 적재할 수 있어 승차감과 공간을 동시 만족하는 장점이 있습니다.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-header" onclick="toggleFaq(this)">
+                            리스나 렌트 이용 시 만기 때 인수와 반납 중 어느 쪽이 유리한가요?
+                            <span class="faq-icon"></span>
+                        </div>
+                        <div class="faq-body">
+                            만기 도래 시점의 중고차 시장 소매 시세와 계약 시 설정해 둔 잔존 가치(인수 가격)를 상호 비교해 결정해야 합니다. 만약 시장 시세가 잔존 가치보다 높다면 인수 후 직접 매각하거나 보유하는 것이 차액을 보전하는 현명한 방법이며, 반대로 시세가 급격히 감가되어 인수 비용보다 낮다면 반납하는 것이 금전적 리스크를 면하는 정석적인 방법입니다.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-header" onclick="toggleFaq(this)">
+                            BMW 6GT의 잔고장 수준과 유지 관리 시 주의할 점은 어떤 것들이 있나요?
+                            <span class="faq-icon"></span>
+                        </div>
+                        <div class="faq-body">
+                            파워트레인 계통(엔진, 미션)은 BMW의 베스트셀러 엔진들이 적용되어 매우 완성도가 높고 고질병이 적은 편입니다. 다만 에어 서스펜션 누설 고장, 액티브 리어 스포일러 오작동, 프레임리스 도어의 윈도우 글라스 단차 소음 등이 간혹 보고됩니다. 정기적으로 서비스 센터 또는 전문 사설 업체를 찾아 냉각수 누수나 고무 가스켓 경화에 따른 미세 누유가 없는지 체크하는 예방 정비가 수입차 유지 관리의 핵심입니다.
+                        </div>
+                    </div>
+
+                </section>
+            </article>
+
+            <!-- 오른쪽: 실시간 견적 산출 계산기 및 상담 신청 영역 (사이드바 고정형식) -->
+            <aside>
+                <div class="card calculator-card" style="position: sticky; top: 20px;">
+                    <h3>BMW 6시리즈 가상 견적 계산기</h3>
+                    
+                    <div class="form-group">
+                        <label for="calc_model">구매 고려 모델 선택</label>
+                        <select id="calc_model">
+                            <option value="">차종 등급을 선택하세요</option>
+                            <option value="620d_lux">620d GT Luxury (2,000cc 디젤)</option>
+                            <option value="620d_mspt">620d GT M Sport (2,000cc 디젤)</option>
+                            <option value="630i_lux">630i xDrive Luxury (3,000cc 가솔린)</option>
+                            <option value="630i_mspt">630i xDrive M Sport (3,000cc 가솔린)</option>
+                            <option value="640i_mspt">640i xDrive M Sport (3,000cc 가솔린)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="calc_condition">차량 구매 구분</label>
+                        <select id="calc_condition">
+                            <option value="used">실속 중고차 구매 (2021-2024년식)</option>
+                            <option value="new">잔여 신차 재고 매물 구매</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="calc_purchase_type">구매 지불 조건</label>
+                        <select id="calc_purchase_type">
+                            <option value="cash">일시불 (전액 현금)</option>
+                            <option value="lease">운용 리스 (60개월, 보증30%)</option>
+                            <option value="rent">장기렌트 (60개월, 보증30%)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="calc_mileage">예상 연간 주행거리 (km)</label>
+                        <input type="number" id="calc_mileage" value="15000" placeholder="예: 15000">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="calc_age">보험 가입 최저 연령</label>
+                        <select id="calc_age">
+                            <option value="over30">만 30세 이상 한정</option>
+                            <option value="under30">만 26세 이상 - 만 30세 미만</option>
+                            <option value="under26">만 26세 미만 운전자</option>
+                        </select>
+                    </div>
+
+                    <button class="calc-btn" onclick="calculateCost()">실구매가 및 유지비 계산하기</button>
+
+                    <!-- 결과 출력 영역 -->
+                    <div id="result-section" class="result-box">
+                        <h4>산출 결과 피드백</h4>
+                        <div class="result-item">
+                            <span>차량 실제 구입가 (할인반영)</span>
+                            <span id="res_car_price">0 원</span>
+                        </div>
+                        <div class="result-item">
+                            <span>취등록세 (공식 7% 기준)</span>
+                            <span id="res_acq_tax">0 원</span>
+                        </div>
+                        <div class="result-item">
+                            <span>연간 자동차세 (예상)</span>
+                            <span id="res_auto_tax">0 원</span>
+                        </div>
+                        <div class="result-item">
+                            <span>연간 예상 유류비</span>
+                            <span id="res_fuel">0 원</span>
+                        </div>
+                        <div class="result-item">
+                            <span>연간 예상 자동차보험료</span>
+                            <span id="res_insurance">0 원</span>
+                        </div>
+                        <div class="result-item">
+                            <span>월 예상 할부/대여료</span>
+                            <span id="res_monthly_finance">0 원</span>
+                        </div>
+                        <div class="result-total">
+                            <span>월 총 지출액 (유지비포함)</span>
+                            <span id="res_total_monthly">0 원</span>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
     </main>
-  </body>
-</html>
+
+  
+    <script>
+        // 인터랙티브 탭 교체 기능
+        function openTab(evt, tabId) {
+            const tabContents = document.getElementsByClassName("tab-content");
+            for (let i = 0; i < tabContents.length; i++) {
+                tabContents[i].classList.remove("active");
+            }
+
+            const tabButtons = document.getElementsByClassName("tab-button");
+            for (let i = 0; i < tabButtons.length; i++) {
+                tabButtons[i].classList.remove("active");
+            }
+
+            document.getElementById(tabId).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }
+
+        // 아코디언 FAQ 토글 기능
+        function toggleFaq(element) {
+            const faqItem = element.parentElement;
+            faqItem.classList.toggle("active");
+        }
+
+        // 수입차 실구매가 및 연간 유지비 산출 로직
+        function calculateCost() {
+            const model = document.getElementById('calc_model').value;
+            const condition = document.getElementById('calc_condition').value;
+            const purchaseType = document.getElementById('calc_purchase_type').value;
+            const mileage = parseFloat(document.getElementById('calc_mileage').value) || 15000;
+            const age = document.getElementById('calc_age').value;
+
+            if (!model) {
+                alert('구매 모델을 먼저 선택해 주십시오.');
+                return;
+            }
+
+            let basePrice = 0;
+            let discount = 0;
+            let displacement = 1995;
+            let fuelEfficiency = 13.5;
+            let fuelPrice = 1600;
+
+            if (model === '620d_lux') {
+                basePrice = condition === 'new' ? 86700000 : 42000000;
+                discount = condition === 'new' ? 12000000 : 0;
+                displacement = 1995;
+                fuelEfficiency = 13.5;
+                fuelPrice = 1600;
+            } else if (model === '620d_mspt') {
+                basePrice = condition === 'new' ? 89800000 : 46000000;
+                discount = condition === 'new' ? 12500000 : 0;
+                displacement = 1995;
+                fuelEfficiency = 13.0;
+                fuelPrice = 1600;
+            } else if (model === '630i_lux') {
+                basePrice = condition === 'new' ? 89500000 : 54000000;
+                discount = condition === 'new' ? 11000000 : 0;
+                displacement = 2998;
+                fuelEfficiency = 9.7;
+                fuelPrice = 1800;
+            } else if (model === '630i_mspt') {
+                basePrice = condition === 'new' ? 93500000 : 59000000;
+                discount = condition === 'new' ? 11500000 : 0;
+                displacement = 2998;
+                fuelEfficiency = 9.3;
+                fuelPrice = 1800;
+            } else if (model === '640i_mspt') {
+                basePrice = condition === 'new' ? 109500000 : 68000000;
+                discount = condition === 'new' ? 14000000 : 0;
+                displacement = 2998;
+                fuelEfficiency = 9.0;
+                fuelPrice = 1800;
+            }
+
+            const finalCarPrice = basePrice - discount;
+            const acquisitionTax = Math.floor(finalCarPrice * 0.07);
+
+            let annualAutoTax = Math.floor(displacement * 200 * 1.3);
+
+            const annualFuelCost = Math.floor((mileage / fuelEfficiency) * fuelPrice);
+
+            let annualInsurance = 1000000;
+            if (age === 'under26') {
+                annualInsurance = 2400000;
+            } else if (age === 'under30') {
+                annualInsurance = 1450000;
+            } else {
+                annualInsurance = 950000;
+            }
+
+            let monthlyFinance = 0;
+            if (purchaseType === 'lease') {
+                monthlyFinance = Math.floor((finalCarPrice * 0.7) / 60 * 1.15);
+            } else if (purchaseType === 'rent') {
+                monthlyFinance = Math.floor((finalCarPrice * 0.75) / 60 * 1.20);
+            }
+
+            document.getElementById('res_car_price').innerText = finalCarPrice.toLocaleString() + ' 원';
+            document.getElementById('res_acq_tax').innerText = acquisitionTax.toLocaleString() + ' 원';
+            document.getElementById('res_auto_tax').innerText = annualAutoTax.toLocaleString() + ' 원';
+            document.getElementById('res_fuel').innerText = annualFuelCost.toLocaleString() + ' 원';
+            document.getElementById('res_insurance').innerText = annualInsurance.toLocaleString() + ' 원';
+            document.getElementById('res_monthly_finance').innerText = purchaseType === 'cash' ? '0 원' : monthlyFinance.toLocaleString() + ' 원';
+
+            const totalAnnualRunningCost = annualAutoTax + annualFuelCost + annualInsurance;
+            const monthlyRunningCost = Math.floor(totalAnnualRunningCost / 12) + (purchaseType !== 'cash' ? monthlyFinance : 0);
+            
+            document.getElementById('res_total_monthly').innerText = monthlyRunningCost.toLocaleString() + ' 원';
+            document.getElementById('result-section').style.display = 'block';
+        }
+    </script>
+  
